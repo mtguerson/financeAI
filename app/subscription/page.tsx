@@ -1,3 +1,5 @@
+import NavBar from "../_components/navbar";
+
 export default function SubscriptionPage() {
-  return <h1>Transactions</h1>;
+  return <NavBar />;
 }
