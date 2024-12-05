@@ -1,3 +1,4 @@
+import AddTransactionButton from "@/app/_components/add-transaction-button";
 import { Card, CardContent, CardHeader } from "@/app/_components/ui/card";
 import type { ReactNode } from "react";
 
@@ -24,7 +25,7 @@ export default function SummaryCard({
           {title}
         </p>
       </CardHeader>
-      <CardContent>
+      <CardContent className="flex justify-between">
         <p
           className={`font-bold ${size === "small" ? "text-2xl" : "text-4xl"}`}
         >
@@ -33,6 +34,8 @@ export default function SummaryCard({
             currency: "BRL",
           }).format(amount)}
         </p>
+
+        {size === "large" && <AddTransactionButton />}
       </CardContent>
     </Card>
   );
