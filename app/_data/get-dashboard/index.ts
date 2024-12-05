@@ -7,10 +7,12 @@ import type {
 } from "./types";
 
 export const getDashboard = async (month: string) => {
-  const { userId } = await auth();
+  const { userId } = auth();
+
   if (!userId) {
     throw new Error("Unauthorized");
   }
+
   const where = {
     userId,
     date: {
