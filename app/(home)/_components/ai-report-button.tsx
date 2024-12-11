@@ -38,10 +38,18 @@ export default function AiReportButton({ month }: AiReportButtonProps) {
   }
 
   return (
-    <Dialog>
+    <Dialog
+      onOpenChange={(open) => {
+        if (!open) {
+          setReport(null);
+        }
+      }}
+    >
       <DialogTrigger asChild>
-        <Button variant="ghost">Relatório IA</Button>
-        <BotIcon />
+        <Button variant="ghost">
+          Relatório IA
+          <BotIcon />
+        </Button>
       </DialogTrigger>
       <DialogContent className="max-w-[600px]">
         <DialogHeader>

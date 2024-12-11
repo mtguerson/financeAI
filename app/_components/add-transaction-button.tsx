@@ -4,7 +4,12 @@ import { useState } from "react";
 import { UpsertTransactionDialog } from "./upsert-transaction-dialog";
 import { Button } from "./ui/button";
 import { ArrowDownUpIcon } from "lucide-react";
-import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "./ui/tooltip";
 
 interface AddTransactionButtonProps {
   userCanAddTransaction?: boolean;
@@ -16,7 +21,7 @@ export default function AddTransactionButton({
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   return (
-    <>
+    <TooltipProvider>
       <Tooltip>
         <TooltipTrigger asChild>
           <Button
@@ -37,6 +42,6 @@ export default function AddTransactionButton({
         isOpen={isDialogOpen}
         setIsOpen={setIsDialogOpen}
       />
-    </>
+    </TooltipProvider>
   );
 }
