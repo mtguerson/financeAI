@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# financeAI
 
-## Getting Started
+O **financeAI** é um sistema de gerenciamento financeiro que utiliza IA (ChatGPT) para gerar relatórios detalhados sobre suas finanças. O projeto foi desenvolvido com **Next.js** e integra com diversas tecnologias para oferecer uma experiência rica e segura, incluindo **Stripe** para pagamentos, **Clerk** para autenticação, **Prisma ORM** com **PostgreSQL** como banco de dados e **Docker** para facilitar o ambiente de desenvolvimento.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**: Framework React para criação de aplicações full-stack.
+- **Stripe**: Processamento de pagamentos.
+- **ChatGPT**: Geração de relatórios financeiros automatizados.
+- **ShadCN**: Biblioteca de componentes UI para estilização.
+- **Clerk**: Autenticação e gerenciamento de usuários.
+- **Prisma ORM**: ORM para gerenciamento de banco de dados.
+- **PostgreSQL**: Banco de dados relacional.
+- **Docker**: Containerização do banco de dados.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Autenticação de Usuários**: Cadastro e login de usuários com Clerk.
+- **Gerenciamento Financeiro**: Controle de despesas e receitas.
+- **Geração de Relatórios**: Relatórios financeiros detalhados gerados pelo ChatGPT com base nos dados registrados.
+- **Integração com Stripe**: Processamento de pagamentos e integração para gerenciamento de transações financeiras.
+- **Interface Moderna**: Design e componentes responsivos utilizando ShadCN para uma UI agradável e intuitiva.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Como Rodar o Projeto
 
-## Learn More
+### Pré-requisitos
 
-To learn more about Next.js, take a look at the following resources:
+Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Node.js** (versão 14 ou superior)
+- **Docker** (para rodar o banco de dados)
+- **Docker Compose** (opcional, mas recomendado para orquestrar o Docker)
