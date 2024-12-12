@@ -30,3 +30,13 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 - **Node.js** (versão 14 ou superior)
 - **Docker** (para rodar o banco de dados)
 - **Docker Compose** (opcional, mas recomendado para orquestrar o Docker)
+
+### Screenshots
+
+![image](https://github.com/user-attachments/assets/d6be7293-9dbe-4e3b-adef-99ca6811761f)
+![image](https://github.com/user-attachments/assets/d05c18f2-a598-4f9f-a347-24d695cff510)
+![image](https://github.com/user-attachments/assets/b75cb399-992a-485d-97c7-63ee6a8f3c2a)
+![image](https://github.com/user-attachments/assets/922f9c2b-3dfd-4233-ba89-a345938769ae)
+
+
+
